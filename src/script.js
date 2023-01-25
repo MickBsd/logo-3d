@@ -27,7 +27,7 @@ scene.add(directionalLight);
 
 //Models
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('https://drive.google.com/file/d/1WhCixKEsUZuCQgVjikeZez69IfPKV3kK/view?usp=share_link', (gltf) => 
+gltfLoader.load('webflow.gltf', (gltf) => 
     {
         console.log('success');
         console.log(gltf);
