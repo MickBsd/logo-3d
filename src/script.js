@@ -15,7 +15,7 @@ camera.lookAt(0, 0, 0);
 scene.add(camera);
 
 //Orbit controls
-const controls = new OrbitControls( camera, canvas );
+//const controls = new OrbitControls( camera, canvas );
 
 //ambient light
 const ambientLight = new THREE.AmbientLight(0xcccccc, 0.5);
@@ -65,7 +65,7 @@ function tick() {
     if (model) model.rotation.y += 0.005;    
     //cube.rotation.y += 0.005;
     //cube.rotation.x += 0.005;
-    controls.update();
+    //controls.update();
     renderer.render(scene, camera);
     requestAnimationFrame(tick);
 }
